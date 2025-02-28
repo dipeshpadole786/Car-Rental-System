@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    
+    min-height: 100vh;
+    background: url("machine-grey-background-volvo-wallpaper-preview.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .header_element a{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+}
+header .header_element a:hover{
+    border-bottom: 3px solid orangered;
+    color: orangered;
+}
+
+header h2{
+    color:#fff;
+    margin-right: 50px;
+    font-size:30px;
+    font-weight: 500;
+
+    
+}
+header h2 span{
+    color: orangered;
+    font-size: 45px;
+    font-weight: 650;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animatedbag 5s linear infinite;
+}
+@keyframes animatedbag{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.login_form{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    background: transparent;
+    backdrop-filter: blur(15px);
+   
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 150px;
+    margin-left: 150px;
+    box-shadow: 0 0 25px red, 0 0 50px red;
+    transform: scale(0);
+    z-index: 9;
+
+   
+}
+.registratio_form{
+    position: absolute;
+    height: 550px;
+    width: 400px;
+    display: flex;
+    background: transparent;
+    backdrop-filter: blur(15px);
+   
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-left: 150px;
+    box-shadow: 0 0 25px red, 0 0 50px red;
+
+    z-index: 9;
+    transform: scale(0);
+
+}
+.new_banner{
+    position: absolute;
+    height: 400px;
+    width: 700px;
+    display: flex;
+    background: transparent;
+    backdrop-filter: blur(15px);
+   
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
+    margin-top: 140px;
+    margin-left: 150px;
+    box-shadow: 0 0 25px blue, 0 0 50px blue;
+
+    z-index: 9;
+    
+}
+.new_banner .home-content{
+    width: 650px;
+
+}
+.home-content h1{
+    font-size: 64px;
+    line-height: 1.2em;
+}
+.home-content h3{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.btn_box{
+    width: 375px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    margin-top: 10px;
+}
+.btn_box .btn1{
+    padding: 7px 14px;
+    background-color: orangered;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 200px;
+}
+
+.btn1:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+.new_banner{
+    transform: scale(1);
+}
+.new_banner.active{
+    transform: scale(0);
+}
+
+.registratio_form.on{
+    transform: scale(1);
+}
+.login_form.active{
+    transform: scale(1);
+}
+
+
+
+#head{
+     font-size:2em;
+     color: black;
+     text-align: center;
+}
+.input_box{
+    width: 310px;
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+    
+}
+.input_box label{
+    position: relative;
+    top: -20px;
+    left: 4px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    color: black;
+    color: white;
+    transition: .5s;
+}
+
+.input_box input:focus~label,
+.input_box input:valid~label{
+    top: -55px;
+}
+
+.input_box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    font-size: 1em;
+    padding-top: 30px;
+    padding-right: 40px;
+    color: black;
+}
+.input_box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.remember_forgott{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.remember_forgott input{
+    margin: 3px;
+
+}
+.remember_forgott a{
+    text-decoration: none;
+    color: black;
+}
+.remember_forgott a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+.footer{
+    margin: 25px 0 15px;
+    color: black;
+    text-align: center;
+}
+.footer p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer p a:hover{
+    text-decoration: underline;
+}
+@media (max-width:390px){
+    .login_form{
+        width: 100%;
+        height: 100vh;
+        border-radius: none;
+        border: none;
+    }
+}
+.login_form .newicon{
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-bottom-left-radius:20px;
+    cursor: pointer;
+   z-index: 1;
+}
+.registratio_form .newicon{
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-bottom-left-radius:20px;
+    cursor: pointer;
+   z-index: 1;
+}
+.header_element .btt_login{
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    border: 1px solid white;
+    height: 60px;
+    width: 200px;
+    border-radius: 4px;padding: 3px;
+    transition: .5s ease;
+}
+.header_element .btt_login:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid orangered;
+}
